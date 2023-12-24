@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".CourseDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="76dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/your_logo" />
+
+
+    <ImageView
+        android:id="@+id/course1"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/course4_image" />
+
+    <TextView
+        android:id="@+id/course3TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Data analysis"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/courseDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course3TitleText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="259dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="14dp"
+        android:textSize="16dp"
+        android:text="This introductory data analysis course is tailored for individuals aiming to develop essential skills in extracting meaningful insights from data. Participants will learn fundamental  used in the data analysis process. The course focuses on practical applications, enabling learners to analyze and interpret data sets effectively, make data-driven decisions, and communicate findings."/>
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseDescriptionTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:onClick="addToCart"
+        android:text="Add to Cart" />
+
+    <Button
+        android:id="@+id/addToFavoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseDescriptionTextView"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="71dp"
+        android:layout_toEndOf="@id/addToCartButton"
+        android:onClick="addToFavorites"
+        android:text="Add to Favorites" />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseDescriptionTextView"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="111dp"
+        android:layout_toEndOf="@id/addToCartButton"
+        android:onClick="addToFavorites"
+        android:textColor="@color/red"
+        android:text="Back" />
+</RelativeLayout>

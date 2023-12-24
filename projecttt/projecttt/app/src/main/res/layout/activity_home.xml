@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- res/layout/activity_home.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Welcome Message -->
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name!"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="100dp" />
+
+
+    <Button
+        android:id="@+id/myacc"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="My Account"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- Container for Slogan Image -->
+    <ImageView
+        android:id="@+id/sloganImageView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/your_slogan_image"/>
+
+    <!-- Available Courses Text -->
+    <TextView
+        android:id="@+id/availableCoursesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Courses:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/sloganImageView"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Scrollable GridLayout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availableCoursesTextView"
+        android:layout_marginTop="8dp">
+
+        <GridLayout
+            android:id="@+id/coursesGridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <!-- Course 1 -->
+            <LinearLayout
+                android:id="@+id/course1Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course1ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course1_image"/>
+
+                <TextView
+                    android:id="@+id/course1NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Financial Planning"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 2 -->
+            <LinearLayout
+                android:id="@+id/course2Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course2ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course2_image"/>
+
+                <TextView
+                    android:id="@+id/course2NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basics of Database"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 3 -->
+            <LinearLayout
+                android:id="@+id/course3Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course3ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course3_imagee"/>
+
+                <TextView
+                    android:id="@+id/course3NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digital Marketing"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 4 -->
+            <LinearLayout
+                android:id="@+id/course4Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course4ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course4_image"/>
+
+                <TextView
+                    android:id="@+id/course4NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Analysis"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 5 -->
+            <LinearLayout
+                android:id="@+id/course5Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course5ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course5_image"/>
+
+                <TextView
+                    android:id="@+id/course5NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probability"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 6 -->
+            <LinearLayout
+                android:id="@+id/course6Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course6ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course6_image"/>
+
+                <TextView
+                    android:id="@+id/course6NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro to AI"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 7 -->
+            <LinearLayout
+                android:id="@+id/course7Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course7ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course7_image"/>
+
+                <TextView
+                    android:id="@+id/course7NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Machine Learning"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 8 -->
+            <LinearLayout
+                android:id="@+id/course8Layout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray">
+
+                <ImageView
+                    android:id="@+id/course8ImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course8_image"/>
+
+                <TextView
+                    android:id="@+id/course8NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Art and Design"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80FFFFFF"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

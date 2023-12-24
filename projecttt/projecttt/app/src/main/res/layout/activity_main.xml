@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_welcome.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="198dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/your_logo" />
+
+    <TextView
+        android:id="@+id/name"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINZY"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"/>
+
+    <!-- Loader Icon -->
+    <ProgressBar
+        android:id="@+id/loaderProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Picture Image -->
+    <ImageView
+        android:id="@+id/pictureImageView"
+        android:layout_width="339dp"
+        android:layout_height="324dp"
+        android:layout_below="@id/loaderProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/your_picture" />
+
+</RelativeLayout>
